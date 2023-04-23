@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import React from 'react';
+import SquareTable from './components/SquareTable';
+import RoundTable from './components/RoundTable';
 import './App.css';
+import TablePlanner from './components/TablePlanner';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+ 
+      <div className="tables-container">
+        <TablePlanner />
+        <SquareTable />
+        <RoundTable />
+        <SquareTable />
+      </div>
     </div>
   );
 }
